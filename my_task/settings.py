@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'marcin-galazyn',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': 'mongodb+srv://maleceq:i18lwWBMMrZN1IYf@marcin-galazyn.op63btu.mongodb.net/?retryWrites=true&w=majority', # Replace with your MongoDB server address
+            'host': 'mongodb+srv://maleceq:i18lwWBMMrZN1IYf@marcin-galazyn.xgfdgq2.mongodb.net/?retryWrites=true&w=majority', # Replace with your MongoDB server address
             'port': 27017,               # Replace with your MongoDB port if different
             'username': 'maleceq', # Replace with your MongoDB username (optional)
             'password': 'i18lwWBMMrZN1IYf', # Replace with your MongoDB password (optional)
