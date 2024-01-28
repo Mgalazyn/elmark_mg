@@ -32,16 +32,8 @@ Change into the project directory:
 ```bash
   cd elmark_mg
 ```
-Create virtual env:
-```bash
-python -m venv "NAME OF YOUR VENV"
-```
-Start your virtualenv - Windows OS 
-```bash
-"NAME OF YOUR VENV"\Scripts\activate
-```
 
-Create a file called .env and add the following environment variables:
+Create a file called .env and add the following environment variables (for example open .env-example):
 
 Example .env
 ```bash
@@ -65,9 +57,10 @@ docker-compose up
 ```
 
 **Then access: http://localhost:8000/api/**
-Then you have displayed all avaliable endpoints
+You have displayed list of all avaliable endpoints
 
 **FOR DOCUMENTATION ACCESS: http://localhost:8000/api/docs/**
+![image](https://github.com/Mgalazyn/elmark_mg/assets/91530764/ce7fd798-b394-4c5d-a1e5-870b1d4b23af)
 
 ## License
 
