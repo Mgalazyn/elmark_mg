@@ -32,6 +32,14 @@ Change into the project directory:
 ```bash
   cd elmark_mg
 ```
+Create virtual env:
+```bash
+python -m venv "NAME OF YOUR VENV"
+```
+Start your virtualenv - Windows OS 
+```bash
+"NAME OF YOUR VENV"\Scripts\activate
+```
 
 Create a file called .env and add the following environment variables:
 
@@ -56,6 +64,7 @@ create container and run
 docker-compose up
 ```
 
+**Then access link: http://localhost:8000/api/docs/**
 
 ## License
 
