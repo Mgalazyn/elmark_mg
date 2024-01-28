@@ -8,4 +8,5 @@ urlpatterns = [
     path('location/<int:pk>/', views.LocationRUD.as_view()),
     path('parts/', views.PartsRW.as_view()),
     path('parts/<str:pk>/', views.PartRUD.as_view()),
+    path('parts-filter/', views.PartsFilter.as_view()), #alternative endpoint for filters
 ]
