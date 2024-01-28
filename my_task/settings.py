@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-fh66s#-rfj2(oe-b=x06*bv^mruw^iblq=ymqdswut#y8ch^yl'
+SECRET_KEY = os.getenv('SECRET-KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = []
 
@@ -84,13 +87,13 @@ WSGI_APPLICATION = 'my_task.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'marcin-galazyn',
+        'NAME': os.getenv('DB-NAME'),
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': 'mongodb+srv://maleceq:i18lwWBMMrZN1IYf@marcin-galazyn.xgfdgq2.mongodb.net/?retryWrites=true&w=majority', # Replace with your MongoDB server address
+            'host': os.getenv('DB-HOST'), # Replace with your MongoDB server address
             'port': 27017,               # Replace with your MongoDB port if different
-            'username': 'maleceq', # Replace with your MongoDB username (optional)
-            'password': 'i18lwWBMMrZN1IYf', # Replace with your MongoDB password (optional)
+            'username': os.getenv('DB-USERNAME'), # Replace with your MongoDB username (optional)
+            'password': os.getenv('DB-PASSWORD'), # Replace with your MongoDB password (optional)
             'authMechanism': 'SCRAM-SHA-1', # Replace with your MongoDB authentication database (optional)
         }
     }
