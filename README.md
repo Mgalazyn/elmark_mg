@@ -12,6 +12,9 @@ At the begining I have created MongoDB connection with project by using djongo/p
 
 **Server:** MongoDB
 
+![data](https://github.com/Mgalazyn/elmark_mg/assets/91530764/367bf26e-fb41-4783-9a97-0de75c7811b2)
+
+
 ## Why Django REST Framework
 Basicly it most common used framework for creating RESTful API, have most pythonic way to creating project (using external packages). APIs created with DRF are easy to scale, mostly understandable by other developers, create clear structure and organization.
 ## Getting Started
@@ -30,7 +33,7 @@ Change into the project directory:
   cd elmark_mg
 ```
 
-Create a file called .env and add the following environment variables:
+Create a file called .env and add the following environment variables (for example open .env-example):
 
 Example .env
 ```bash
@@ -53,6 +56,11 @@ create container and run
 docker-compose up
 ```
 
+**Then access: http://localhost:8000/api/**
+You have displayed list of all avaliable endpoints
+
+**FOR DOCUMENTATION ACCESS: http://localhost:8000/api/docs/**
+![image](https://github.com/Mgalazyn/elmark_mg/assets/91530764/ce7fd798-b394-4c5d-a1e5-870b1d4b23af)
 
 ## License
 
