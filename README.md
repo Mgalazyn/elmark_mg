@@ -64,7 +64,10 @@ create container and run
 docker-compose up
 ```
 
-**Then access link: http://localhost:8000/api/docs/**
+**Then access: http://localhost:8000/api/**
+Then you have displayed all avaliable endpoints
+
+**FOR DOCUMENTATION ACCESS: http://localhost:8000/api/docs/**
 
 ## License
 
