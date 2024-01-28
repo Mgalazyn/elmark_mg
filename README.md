@@ -12,6 +12,9 @@ At the begining I have created MongoDB connection with project by using djongo/p
 
 **Server:** MongoDB
 
+![data](https://github.com/Mgalazyn/elmark_mg/assets/91530764/367bf26e-fb41-4783-9a97-0de75c7811b2)
+
+
 ## Why Django REST Framework
 Basicly it most common used framework for creating RESTful API, have most pythonic way to creating project (using external packages). APIs created with DRF are easy to scale, mostly understandable by other developers, create clear structure and organization.
 ## Getting Started
